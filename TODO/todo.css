@@ -3,8 +3,9 @@
     width: 800px;
     min-height: 400px;
     margin: 20px auto;
-    background-color: rgb(244, 171, 74);
+    background-color: rgb(248, 220, 184);
     padding: 20px;
+    box-shadow:  0 0 10px black;
 
 }
 .box1,.box2,.taskList{
@@ -16,6 +17,7 @@
     width: 100%;
     height: 40px;
     margin-bottom: 30px;
+    display: flex;
 }
 .box1 #inputTask{
     width: 85%;
@@ -27,6 +29,8 @@ button{
     padding: 10px 20px;
     margin-top: 0 10px;
     cursor: pointer;
+    font-weight:800 ;
+    background-color: rgb(112, 237, 177);
 }
 .taskList{
     display: flex;
@@ -41,16 +45,36 @@ p{
     cursor: pointer;
     font-size:16px ;
     text-transform: uppercase;
+    font-weight: 700;
 }
 input{
     border: none;
     outline: none;
     padding-left: 10px;
     font-size: 24px;
-    background-color: rgb(226, 226, 221);
+    background-color: hwb(60 98% 1%);
 
 
 }
 h1{
     text-align: center;
+}
+body{
+    background-color: aquamarine;
+}
+#saveBtn{
+    display: none;
+}
+.deleteBtn{
+    color: rgb(184, 25, 25);
+}
+.editBtn{
+    color:rgb(14, 14, 99);
+}
+#deleteAll{
+    background-color: rgb(238, 22, 22);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: bisque;
 }

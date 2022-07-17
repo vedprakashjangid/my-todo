@@ -2,14 +2,19 @@
 <head>
     <title>MY TODO</title>
     <link rel="stylesheet" href="todo.css">
+   <link rel="stylesheet" type="text/css" href="css/all.min.css">
+   
 </head>
 <body>
-
     <div class="container">
+        <button id="deleteAll">Delete All Task</button>
         <h1>TO-DO List</h1>
         <div class="box1">
-            <input type="text" name="" id="inputTask" placeholder="Enter task" value="">
+            <input type="text" name="" id="inputTask" placeholder="Enter task..." value="">
+            <input type="hidden" id="hiddenCounter">
         <button id="addBtn" >ADD</button>
+        <button id="saveBtn" >Save</button>
+
         </div>
    
     <div class="box2" id="box2">
@@ -59,6 +64,6 @@
    </div>
    --> 
 </div>
-<script src="todo.js"></script>
+<script src="todo1.js"></script>
 </body>
 </html>
