@@ -8,6 +8,7 @@ let arr = [];
 addBtn.addEventListener("click",function(e){
 
     e.preventDefault();
+    
 
    if(inputTask.value.trim()!=0){
     
