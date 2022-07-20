@@ -2,6 +2,15 @@ let inputTask = document.getElementById("inputTask");
 let addBtn = document.getElementById("addBtn");
 showToDo();
 
+
+//enabling enter key
+inputTask.addEventListener("keyup",function(e){
+    e.prevetDefault();
+    if(e.keyCode===13){
+        alert("enter pressed")
+        addBtn.click();
+    }
+})
 addBtn.addEventListener("click",function(){
     innputTaskVal = inputTask.value;
     inputTask.value="";
